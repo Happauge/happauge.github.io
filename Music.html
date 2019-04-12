@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCxUI9Xspm2wlhJnB6P9htJseWHSjnEfig",
+            authDomain: "webapp1-c80b8.firebaseapp.com",
+            databaseURL: "https://webapp1-c80b8.firebaseio.com",
+            projectId: "webapp1-c80b8",
+            storageBucket: "webapp1-c80b8.appspot.com",
+            messagingSenderId: "188097298159"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/Finaljs.js"></script>
+    <link rel="stylesheet" href="css/FinalProject.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="Home.html">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Log-Sign.html">Sign-up or Log-in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Aboutme.html">About Myself</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Goals.html">Goals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My Interests
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Hikes.html">Hiking</a>
+                    <a class="dropdown-item" href="Videogames.html">Video Games</a>
+                    <a class="dropdown-item" href="MoviesTv.html">Movies And TV</a>
+                    <a class="dropdown-item" href="Cooking.html">Cooking</a>
+                    <a class="dropdown-item" href="Music.html">Music</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br><br><br><br>
+<div class="container">
+<div class="accordion" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Pop
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                The first type of music i listen to would be pop. Pop is a common type of music with songs like
+                'The last of the Real Ones' by Fall Out Boys, 'Youngblood' by Five Seconds of Summer and
+                'Symphony' by Clean Bandit and Zara Larsson
+                <br>
+                <br>
+                <a href="https://www.youtube.com/watch?v=-RJSbO8UZVY" class="btn btn-light">Five Seconds of Summer's Youngblood</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Electric Dance Music
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                The next type of music i like is Electric Dance Music or EDM for short. EDM usually has a faster beat
+                with more eletronic sounds in it. I personally like EDM that still has singers in it with artist such
+                as Alan Walker or Audien. Alan Walker has music such as 'Faded' or 'Alone' which have singers or songs like 'Fade' which do not.
+                <br>
+                <br>
+                <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" class="btn btn-light">Alan Walkers' Faded</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Nightcore
+                </button>
+            </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+            Nightcore is a style of music that is normally seen as covers of other songs. Nightcore usually speeds up
+                the song and edits the voice to be a higher pitch. Good nightcore songs are songs such as 'Numb' or 'Angel with a Shotgun'
+                <br>
+                <br>
+                <a href="https://www.youtube.com/watch?v=-GktSUYRO3M" class="btn btn-light">Nightcored Numb</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <div class="footer-copyright bg-dark text-center py-3">© 2019 Copyright:
+        <a>Zachery Johnston</a>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    var productdisplay = document.getElementById('products');
+    productdisplay.innerHTML = "";var db = firebase.firestore();
+    db.collection("products").get().then((querySnapshot) =>{
+        alert("Data Recieved");
+
+        productdisplay.innerHTML = "";
+        querySnapshot.forEach((doc) => {
+            productdisplay.innerHTML += (doc.data().productname + " " + doc.data().productprice + " "
+                + "<img src='images/" + doc.data().productimage + "'>" +"<br>");});});
+</script>
+</body>
+</html>
